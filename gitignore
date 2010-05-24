@@ -1,0 +1,12 @@
+.DS_Store
+.svn
+*~
+.*.swp
+
+log
+tmp
+config/amazon_s3.yml
+config/database.yml
+tmp/*
+vendor/gems/*
+vendor/rails/*
