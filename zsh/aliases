@@ -37,3 +37,4 @@ alias rst='touch tmp/restart.txt'
 alias %=' '
 
 alias bundle='nocorrect bundle'
+alias gitx='nocorrect gitx'
