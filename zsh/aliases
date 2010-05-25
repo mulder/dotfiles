@@ -19,6 +19,9 @@ alias gs='git status'
 alias gst='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
+# switch GitHub creds
+alias gh='~/.dotfiles/switch_github_act'
+
 # rails
 alias sc='script/console'
 alias ss='script/server'

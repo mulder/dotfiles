@@ -1,0 +1,11 @@
+#!/usr/bin/ruby
+source = ENV['HOME'] + '/.ssh/github'
+target = ENV['HOME'] + '/.ssh'
+# files = Dir[path + '/*']
+
+# files.map {|x| x.split('.').last}.uniq
+
+system "cp #{source}/id_rsa.#{ARGV[0]} #{target}/id_rsa"
+system "cp #{source}/id_rsa.pub.#{ARGV[0]} #{target}/id_rsa.pub"
+
+puts "Now using '#{ARGV[0]}' GitHub profile.\n"
