@@ -1,0 +1,21 @@
+autoload -U colors && colors
+
+# Automatically define supported terminal colors.
+define_colors() {
+   autoload colors zsh/terminfo
+   if [[ "$terminfo[colors]" -ge 8 ]]
+   then
+       colors
+   fi
+   for color in RED GREEN YELLOW BLUE MAGENTA CYAN WHITE; do
+       eval BOLD_$color='%{$terminfo[bold]$fg[${(L)color}]%}'
+       eval $color='%{$fg[${(L)color}]%}'
+       (( count = $count + 1 ))
+   done
+   NO_COLOR="%{$terminfo[sgr0]%}"
+}
+ 
+define_colors
+unset define_colors
+
+export LSCOLORS="gxfxcxdxbxegedabagacad"

@@ -1,9 +1,10 @@
-autoload -U colors && colors
+setopt appendhistory extendedglob nomatch
+unsetopt autocd beep notify
 
 if [[ -n $SSH_CONNECTION ]]; then
   export PS1='%m:%3~$(git_info_for_prompt)%# '
 else
-  export PS1='[%{$fg[green]%}$(~/.rvm/bin/rvm-prompt v)%{$reset_color%}] %3~%{$fg[blue]%}$(git_info_for_prompt)%{$reset_color%}%# '
+  export PS1='$(print "$GREEN")[$(~/.rvm/bin/rvm-prompt v)] $(print "$NO_COLOR")%3~$(print "$MAGENTA")$(git_info_for_prompt)$(print "$NO_COLOR")%# '
 fi
 
 export EDITOR='mate -w'
@@ -46,3 +47,4 @@ bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
 bindkey '^?' backward-delete-char 
+
