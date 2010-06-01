@@ -1,0 +1,7 @@
+if [ -f ./script/server ]; then
+  ./script/server $*
+elif [ -f ./script/rails ]; then
+  ./script/rails server $*
+else
+  echo 'Not in a rails project...'
+fi

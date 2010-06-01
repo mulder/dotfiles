@@ -22,15 +22,6 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 # switch GitHub creds
 alias gh='~/.dotfiles/switch_github_act'
 
-# rails
-alias sc='script/console'
-alias ss='script/server'
-alias sg='script/generate'
-
-alias rc='script/rails console'
-alias rs='script/rails server'
-alias rg='script/rails generate'
-
 alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
 alias scaffold='script/generate nifty_scaffold'
