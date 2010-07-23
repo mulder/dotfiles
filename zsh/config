@@ -7,8 +7,8 @@ else
   export PS1='$(print "$GREEN")[$(~/.rvm/bin/rvm-prompt v)] $(print "$NO_COLOR")%3~$(print "$MAGENTA")$(git_info_for_prompt)$(print "$NO_COLOR")%# '
 fi
 
-export EDITOR='mate -w'
-export PATH="~/bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/opt/local/bin:$PATH"
+export EDITOR="mate"
+export PATH="$HOME/bin:$HOME/Applications/bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/opt/local/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 fpath=(~/.zsh/functions $fpath)
