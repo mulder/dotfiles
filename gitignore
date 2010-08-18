@@ -4,11 +4,12 @@
 .*.swp
 .rvmrc
 .livereload
+doc/*
 
 log
 tmp
 config/amazon_s3.yml
 config/database.yml
 tmp/*
-vendor/gems/*
+# vendor/gems/*
 vendor/rails/*
