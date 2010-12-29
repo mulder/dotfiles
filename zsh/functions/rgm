@@ -1,0 +1,7 @@
+if [ -f ./script/generate ]; then
+  ./script/generate migration $*
+elif [ -f ./script/rails ]; then
+  ./script/rails generate migration $*
+else
+  echo 'Not in a rails project...'
+fi

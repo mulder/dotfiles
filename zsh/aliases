@@ -33,3 +33,4 @@ alias %=' '
 
 alias bundle='nocorrect bundle'
 alias gitx='nocorrect gitx'
+alias t=terminitor
