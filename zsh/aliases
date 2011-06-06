@@ -18,7 +18,7 @@ alias gb='git branch'
 alias gs='git status'
 alias gst='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-alias gpr='git pull --rebase'
+alias gpr='git pullr'
 
 alias gff='git flow feature'
 alias gfh='git flow hotfix'
