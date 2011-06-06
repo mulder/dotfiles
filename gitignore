@@ -9,6 +9,7 @@ doc/*
 log
 tmp
 config/amazon_s3.yml
+config/sphinx.yml
 #config/database.yml
 tmp/*
 # vendor/gems/*

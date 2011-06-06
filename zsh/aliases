@@ -18,6 +18,12 @@ alias gb='git branch'
 alias gs='git status'
 alias gst='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gpr='git pull --rebase'
+
+alias gff='git flow feature'
+alias gfh='git flow hotfix'
+alias gfr='git flow release'
+
 
 # switch GitHub creds
 alias gh='~/.dotfiles/switch_github_act'
@@ -33,4 +39,12 @@ alias %=' '
 
 alias bundle='nocorrect bundle'
 alias gitx='nocorrect gitx'
-alias t=terminitor
+
+alias tgm='thor generate migration'
+alias tsa='thor api:server'
+alias tc='thor console'
+alias tsd='thor data:autotest'
+alias tdb='thor db:rebuild:all'
+
+alias mysql="/usr/local/mysql/bin/mysql -uroot -p"
+alias mysqladmin="/usr/local/mysql/bin/mysqladmin -uroot -p"
