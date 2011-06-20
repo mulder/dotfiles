@@ -40,3 +40,5 @@ alias %=' '
 alias bundle='nocorrect bundle'
 alias gitx='nocorrect gitx'
 
+alias -g bu='bundle update'
+alias -g tsd='the_score_data'
