@@ -1,3 +1,4 @@
 --color
-
+--debug
 --format nested
+# --fail-fast
