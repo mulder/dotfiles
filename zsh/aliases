@@ -40,11 +40,3 @@ alias %=' '
 alias bundle='nocorrect bundle'
 alias gitx='nocorrect gitx'
 
-alias tgm='thor generate migration'
-alias tsa='thor api:server'
-alias tc='thor console'
-alias tsd='thor data:autotest'
-alias tdb='thor db:rebuild:all'
-
-alias mysql="/usr/local/mysql/bin/mysql -uroot -p"
-alias mysqladmin="/usr/local/mysql/bin/mysqladmin -uroot -p"
