@@ -42,3 +42,7 @@ alias gitx='nocorrect gitx'
 
 alias -g bu='bundle update'
 alias -g tsd='the_score_data'
+
+alias be='bundle exec'
+
+alias curl='noglob curl'
