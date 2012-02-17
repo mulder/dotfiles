@@ -4,7 +4,7 @@ unsetopt autocd beep notify
 if [[ -n $SSH_CONNECTION ]]; then
   export PS1='%m:%3~$(git_info_for_prompt)%# '
 else
-  export PS1='$(print "$GREEN")[$(~/bin/rvm-prompt v)] $(print "$NO_COLOR")%3~$(print "$MAGENTA")$(git_info_for_prompt)$(print "$NO_COLOR")%# '
+  export PS1='$(print "$GREEN")[$(rbenv-prompt)] $(print "$NO_COLOR")%3~$(print "$MAGENTA")$(git_info_for_prompt)$(print "$NO_COLOR")%# '
 fi
 
 export EDITOR="mate"

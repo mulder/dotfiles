@@ -3,6 +3,7 @@
 *~
 .*.swp
 .rvmrc
+.rbenv-version
 .livereload
 doc/*
 
