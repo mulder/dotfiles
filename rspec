@@ -1,4 +1,4 @@
 --color
---debug
---format nested
+# --format nested
 # --fail-fast
+--debugger

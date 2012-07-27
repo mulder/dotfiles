@@ -24,6 +24,8 @@ alias gff='git flow feature'
 alias gfh='git flow hotfix'
 alias gfr='git flow release'
 
+alias gx='gitx 2>> /dev/null'
+
 # Grep
 alias grep='grep --color=auto'
 
