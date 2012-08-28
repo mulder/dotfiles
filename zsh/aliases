@@ -10,7 +10,7 @@ alias la='ls -A'
 # git
 alias gl='git pull'
 alias gp='git push'
-alias gd='git diff | mate'
+alias gd='git diff | subl'
 alias gc='git commit -v '
 alias gca='git commit -a -v'
 alias gco='git checkout'
@@ -25,6 +25,8 @@ alias gfh='git flow hotfix'
 alias gfr='git flow release'
 
 alias gx='gitx 2>> /dev/null'
+
+alias pj='prettify_json'
 
 # Grep
 alias grep='grep --color=auto'

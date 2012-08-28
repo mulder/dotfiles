@@ -7,7 +7,7 @@ else
   export PS1='$(print "$GREEN")[$(rbenv-prompt)] $(print "$NO_COLOR")%3~$(print "$MAGENTA")$(git_info_for_prompt)$(print "$NO_COLOR")%# '
 fi
 
-export EDITOR="mate"
+export EDITOR="subl"
 export PATH="$HOME/bin:$HOME/Applications/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/homebrew/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/opt/local/bin:/usr/local/Cellar/python:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
@@ -48,5 +48,5 @@ bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
-bindkey '^?' backward-delete-char 
+bindkey '^?' backward-delete-char
 
