@@ -1,7 +1,7 @@
 if [ -f ./script/server ]; then
-  ./script/server --debugger $*
+  ./script/server $*
 elif [ -f ./script/rails ]; then
-  ./script/rails server --debugger $*
+  ./script/rails server $*
 else
   echo 'Not in a rails project...'
 fi
