@@ -35,8 +35,9 @@ alias grep='grep --color=auto'
 alias po='powify open'
 alias pr='powify restart'
 
-# switch GitHub creds
-alias gh='~/.dotfiles/switch_github_act'
+# Foreman
+alias fc='foreman run rails c'
+alias fs='foreman start'
 
 alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
