@@ -56,3 +56,7 @@ export DISABLE_GEM_BOX=1
 # Give Ruby more memory
 export RUBY_GC_MALLOC_LIMIT=60000000
 export RUBY_FREE_MIN=200000
+
+# Lion escape sequences
+precmd () {print -Pn "\e]2; %~/ \a"}
+preexec () {print -Pn "\e]2; %~/ \a"}

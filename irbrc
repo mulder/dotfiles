@@ -19,7 +19,7 @@ class Object
   def local_methods(obj = self)
     (obj.methods - obj.class.superclass.instance_methods).sort
   end
-  
+
   # print documentation
   #
   #   ri 'Array#pop'
@@ -52,3 +52,8 @@ def paste
 end
 
 load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb' && ENV['RAILS_ENV']
+
+if File.exists?('./irbrc')
+  puts '** IRB loading custom ./irbrc file **'
+  load './irbrc'
+end

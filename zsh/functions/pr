@@ -1,0 +1,6 @@
+if [ "$4" != "" ]
+then
+    hub pull-request https://github.com/nulayer/pressly-$1/issues/$2 -b nulayer/pressly-$1:$4 -h nulayer/pressly-$1:feature/$3
+else
+    hub pull-request https://github.com/nulayer/pressly-$1/issues/$2 -b nulayer/pressly-$1:develop -h nulayer/pressly-$1:feature/$3
+fi

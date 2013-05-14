@@ -32,8 +32,8 @@ alias pj='prettify_json'
 alias grep='grep --color=auto'
 
 # Powify
-alias po='powify open'
-alias pr='powify restart'
+# alias po='powify open'
+# alias pr='powify restart'
 
 # Foreman
 alias fc='foreman run rails c'
@@ -52,8 +52,12 @@ alias bundle='nocorrect bundle'
 alias gitx='nocorrect gitx'
 
 alias -g bu='bundle update'
-alias -g tsd='the_score_data'
+alias -g pd='pressly-data'
+alias -g pf='pressly-feeder'
+alias -g pt='pressly-themes'
 
 alias be='bundle exec'
 
 alias curl='noglob curl'
+
+alias flush='dscacheutil -flushcache'

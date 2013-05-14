@@ -16,3 +16,5 @@ config/newrelic.yml
 tmp/*
 # vendor/gems/*
 vendor/rails/*
+
+irbrc
