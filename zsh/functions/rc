@@ -3,5 +3,5 @@ if [ -f ./script/console ]; then
 elif [ -f ./script/rails ]; then
   ./script/rails console $*
 else
-  echo 'Not in a rails project...'
+ rails c $*
 fi

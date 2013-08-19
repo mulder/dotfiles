@@ -4,6 +4,7 @@
 .*.swp
 .rvmrc
 .rbenv-version
+.ruby-version
 .livereload
 doc/*
 
