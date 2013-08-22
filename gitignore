@@ -7,8 +7,10 @@
 .ruby-version
 .livereload
 doc/*
+doc
 
 log
+log/*.log
 tmp
 config/amazon_s3.yml
 config/sphinx.yml

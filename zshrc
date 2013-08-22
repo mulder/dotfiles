@@ -14,5 +14,8 @@ alias unhitch='hitch -u'
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && .  ~/.localrc
 
-eval "$(rbenv init - zsh)"
+setopt NO_NOMATCH
 
+source /opt/boxen/env.sh
+
+eval "$(rbenv init - zsh)"
