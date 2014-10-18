@@ -14,10 +14,13 @@ alias gd='git diff | subl'
 alias gc='git commit -v '
 alias gca='git commit -a -v'
 alias gco='git checkout'
+alias gsh='git sh'
+alias gsp='git stash pop'
 alias gb='git branch'
 alias gs='git status'
 alias gst='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias git-cleanup='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias gpr='git pullr'
 
 alias gff='git flow feature'
@@ -52,12 +55,10 @@ alias bundle='nocorrect bundle'
 alias gitx='nocorrect gitx'
 
 alias -g bu='bundle update'
-alias -g pd='pressly-data'
-alias -g pf='pressly-feeder'
-alias -g pt='pressly-themes'
-
 alias be='bundle exec'
 
 alias curl='noglob curl'
 
 alias flush='dscacheutil -flushcache'
+
+alias love="/Applications/love.app/Contents/MacOS/love"

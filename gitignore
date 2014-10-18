@@ -6,6 +6,8 @@
 .rbenv-version
 .ruby-version
 .livereload
+.tags
+.tags_sorted_by_file
 doc/*
 doc
 
@@ -15,7 +17,6 @@ tmp
 config/amazon_s3.yml
 config/sphinx.yml
 #config/database.yml
-config/newrelic.yml
 tmp/*
 # vendor/gems/*
 vendor/rails/*

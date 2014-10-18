@@ -8,7 +8,8 @@ else
 fi
 
 export EDITOR="subl"
-export PATH="$HOME/bin:$HOME/Applications/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/homebrew/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/opt/local/bin:/usr/local/Cellar/python:$PATH"
+export PATH="$HOME/bin:$HOME/Applications/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/homebrew/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/opt/local/bin:/usr/local/Cellar/python:$HOME/Library/Haskell/bin:Library/Haskell/ghc-7.6.3/lib/Elm-0.11/bin:$HOME/.cabal/bin:$PATH"
+
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 export NODE_PATH="/usr/local/lib/node"
@@ -50,12 +51,6 @@ bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
 bindkey '^?' backward-delete-char
 
-
-export DISABLE_GEM_BOX=1
-
-# Give Ruby more memory
-export RUBY_GC_MALLOC_LIMIT=60000000
-export RUBY_FREE_MIN=200000
 
 # Lion escape sequences
 precmd () {print -Pn "\e]2; %~/ \a"}

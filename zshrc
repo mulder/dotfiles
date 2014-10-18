@@ -16,6 +16,11 @@ alias unhitch='hitch -u'
 
 setopt NO_NOMATCH
 
-source /opt/boxen/env.sh
-
 eval "$(rbenv init - zsh)"
+
+if [ `rbenv version-name` =~ "2\.1" ]; then
+  unset RUBY_FREE_MIN
+  unset RUBY_HEAP_MIN_SLOTS
+fi
+
+~/bin/motd
