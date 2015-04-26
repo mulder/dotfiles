@@ -2,6 +2,7 @@
 .svn
 *~
 .*.swp
+.env
 .rvmrc
 .rbenv-version
 .ruby-version
